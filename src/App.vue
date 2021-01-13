@@ -1,9 +1,12 @@
 <template>
-    <div>Hello World</div>
+  <keep-alive>
+    <router-view></router-view>
+  </keep-alive>
 </template>
 
 <script>
 export default {
-    name: "app"
-}
+  name: "app",
+  methods: {},
+};
 </script>
