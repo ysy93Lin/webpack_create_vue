@@ -7,7 +7,7 @@ const webpack = require("webpack")
 const isProd = process.env.NODE_ENV === "production"
 
 module.exports = {
-    entry: path.join(__dirname, "../src/main.js"),
+    entry: ["@babel/polyfill", path.join(__dirname, "../src/main.js")],
     output: {
         filename: 'js/[name].[hash:4].js',
         path: path.join(__dirname, "../dist"),
